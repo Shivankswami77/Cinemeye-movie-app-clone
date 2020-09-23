@@ -1,0 +1,90 @@
+.body {
+  flex: 0.8; /* with this it uses 80% of the space available*/
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #040404;
+  overflow-x: scroll; /*mandatory fro small view*/
+}
+
+.body::-webkit-scrollbar {
+  display: none; /* for hiding scrollbar but keep the functionality CHrOME*/
+}
+
+/*hide scrollbar for IE,EDGE and FIREFOX*/
+.header {
+  -ms-overflow-style: none; /*IE and EDGE*/
+  scrollbar-width: none; /* FIREFOIX*/
+}
+
+.body__header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.bit {
+  margin-top: 13px;
+  color: lightgray;
+  cursor: pointer;
+}
+.body__option {
+  width: 100vh;
+  color: lightgray;
+  align-items: center;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 80px;
+
+  background-color: lightgray;
+}
+.btn1 {
+  color: lightgray;
+  background-color: #040404;
+  border-radius: 100px;
+  margin-top: 6px;
+  margin-left: 50px;
+  display: flex;
+
+  text-align: center;
+
+  border-radius: 10px;
+  width: 60px;
+}
+.btn1 > p {
+  margin-top: 5px;
+}
+.btn1 > .MuiSvgIcon-root {
+  align-items: center;
+}
+.btn1 :hover {
+  color: whitesmoke;
+  cursor: pointer;
+  /*transform: scale(1.1);*/ /* make text larger upon hovering*/
+}
+.btn2 {
+  color: lightgray;
+  background-color: #040404;
+  border-radius: 100px;
+  margin-top: 6px;
+  margin-left: 50px;
+  display: flex;
+
+  text-align: center;
+
+  border-radius: 10px;
+  width: 100px;
+}
+.btn2 :hover {
+  color: whitesmoke;
+  cursor: pointer;
+  /* transform scalemake text larger upon hovering*/
+}
+.btn2 > .MuiSvgIcon-root {
+  align-items: center;
+  margin-top: 3px;
+}
+.btn2 > p {
+  margin-top: 6px;
+}
